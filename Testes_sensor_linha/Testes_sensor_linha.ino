@@ -10,9 +10,9 @@ void loop() {
   sensorValue = digitalRead(sensorPin);  // Lê o valor do sensor de linha
 
   if (sensorValue == HIGH) {
-    Serial.println("Linha detectada");   // Linha detectada
+    Serial.println("Linha não detectada");   // Linha detectada
   } else {
-    Serial.println("Linha não detectada");  // Linha não detectada
+    Serial.println("Linha detectada");  // Linha não detectada
   }
 
   delay(500);  // Pausa de 500ms antes da próxima leitura
